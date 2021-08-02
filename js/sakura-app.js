@@ -180,10 +180,10 @@ function imgError (ele, type) {
       break
     case 3:
 
-      ele.src = 'https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/other/image-404.png'
+      ele.src = 'https://gitee.com/YuLawrence/picture/blob/master/images/image-404.png'
       break
     default:
-      ele.src = 'https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/other/image-404.png'
+      ele.src = 'https://gitee.com/YuLawrence/picture/blob/master/images/image-404.png'
   }
 }
 mashiro_global.post_list_show_animation = new function () {
