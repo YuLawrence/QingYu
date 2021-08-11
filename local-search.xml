@@ -4,6 +4,31 @@
   
   
   <entry>
+    <title>Oracle 中 nvl 的用法</title>
+    <link href="/2021/08/10/Oracle%E4%B8%ADnvl%E7%9A%84%E7%94%A8%E6%B3%95/"/>
+    <url>/2021/08/10/Oracle%E4%B8%ADnvl%E7%9A%84%E7%94%A8%E6%B3%95/</url>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><blockquote><p>记录一下平时简单开发中用到的nvl函数，加深对Oracle常用函数的理解。</p></blockquote><h3 id="1-nvl-的定义（来源于百科）"><a href="#1-nvl-的定义（来源于百科）" class="headerlink" title="1.nvl()的定义（来源于百科）"></a>1.nvl()的定义（来源于百科）</h3><p><a href="https://baike.baidu.com/item/NVL">NVL</a>(E1, E2)的功能为：如果E1为NULL，则函数返回E2，否则返回E1本身。但此函数有一定局限，所以就有了NVL2函数。</p><p>拓展：NVL2函数:Oracle/PLSQL中的一个函数,Oracle在NVL函数的功能上扩展，提供了NVL2函数。<a href="https://baike.baidu.com/item/NVL">NVL</a>2(E1, E2, E3)的功能为：如果E1为NULL，则函数返回E3，若E1不为null，则返回E2。</p><h3 id="2-nvl的格式和用法"><a href="#2-nvl的格式和用法" class="headerlink" title="2.nvl的格式和用法"></a>2.nvl的格式和用法</h3><p>nvl(E1,E2);</p><p>要注意E1和E2的类型要一致，nvl支持的返回值类型有字符型、日期型、日期时间型、数值型、货币型、逻辑型和null值。</p><ul><li>用途一：</li></ul><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs sql"><span class="hljs-keyword">user</span>&#123;id,name&#125;<br><span class="hljs-keyword">select</span> id,nvl(name,&quot;张三&quot;) <span class="hljs-keyword">from</span> <span class="hljs-keyword">user</span><br></code></pre></td></tr></table></figure><p>在对所查询的字段使用nvl，如果查询出来的结果为空值，则返回”张三“。自己在开发中，对于数据库里一些状态字段的数据，有时有的记录没有值但又需要该字段来进行判断，则可以将字段值为1的与字段值为0或null值的区分开来。</p><ul><li>用途二：</li></ul><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs sql"><span class="hljs-keyword">user</span>&#123;id,name&#125;<br><span class="hljs-keyword">select</span> id,name <span class="hljs-keyword">from</span> <span class="hljs-keyword">user</span> <span class="hljs-keyword">where</span> nvl(id,<span class="hljs-number">0</span>) <span class="hljs-operator">=</span> #&#123;id&#125;<br></code></pre></td></tr></table></figure><p>一开始使用也是在这里用的多，同事写的查询方法只查了某个值 = 1的记录，但是数据库里其他很多记录是null，在前端显示的话就没有数据，排查出来后就是加了nvl函数，如果数据库里有该id的记录则正常查询，否则返回该字段为0;</p><blockquote><p>后续若有其他理解感悟，再回来补充。若有大佬觉得哪里有问题，请不吝赐教。QAQ</p></blockquote>]]></content>
+    
+    
+    <categories>
+      
+      <category>/技术/Oracle</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Oracle</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Hello World</title>
     <link href="/2021/07/05/hello-world/"/>
     <url>/2021/07/05/hello-world/</url>
