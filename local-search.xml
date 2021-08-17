@@ -4,6 +4,35 @@
   
   
   <entry>
+    <title>Java容器类详解</title>
+    <link href="/2021/08/17/Java%E5%AE%B9%E5%99%A8%E7%B1%BB%E8%AF%A6%E8%A7%A3/"/>
+    <url>/2021/08/17/Java%E5%AE%B9%E5%99%A8%E7%B1%BB%E8%AF%A6%E8%A7%A3/</url>
+    
+    <content type="html"><![CDATA[<blockquote><p>Java 容器类主要分为以下两类：</p></blockquote><h3 id="一、Collection"><a href="#一、Collection" class="headerlink" title="一、Collection"></a>一、Collection</h3><h4 id="1-List"><a href="#1-List" class="headerlink" title="1.List"></a>1.List</h4><ul><li><p><strong>LinkedList</strong></p></li><li><p><strong>ArrayList</strong></p></li><li><p><strong>Vector</strong></p><ul><li><h4 id="Stack"><a href="#Stack" class="headerlink" title="Stack"></a><strong>Stack</strong></h4></li></ul></li></ul><h4 id="2-Set"><a href="#2-Set" class="headerlink" title="2.Set"></a>2.Set</h4><h4 id="3-Queue"><a href="#3-Queue" class="headerlink" title="3.Queue"></a>3.Queue</h4><h3 id="二、Map"><a href="#二、Map" class="headerlink" title="二、Map"></a>二、Map</h3><ul><li><strong>HashTable</strong></li><li><strong>HashMap</strong></li><li><strong>WeakHashMap</strong></li></ul>]]></content>
+    
+    
+    <categories>
+      
+      <category>面试经验</category>
+      
+      <category>Java</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Java容器类</tag>
+      
+      <tag>数据结构</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>关于Oracle插入纪录如何同时返回主键</title>
     <link href="/2021/08/17/%E5%85%B3%E4%BA%8EOracle%E6%8F%92%E5%85%A5%E7%BA%AA%E5%BD%95%E5%A6%82%E4%BD%95%E5%90%8C%E6%97%B6%E8%BF%94%E5%9B%9E%E4%B8%BB%E9%94%AE/"/>
     <url>/2021/08/17/%E5%85%B3%E4%BA%8EOracle%E6%8F%92%E5%85%A5%E7%BA%AA%E5%BD%95%E5%A6%82%E4%BD%95%E5%90%8C%E6%97%B6%E8%BF%94%E5%9B%9E%E4%B8%BB%E9%94%AE/</url>
