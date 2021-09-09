@@ -4,11 +4,49 @@
   
   
   <entry>
+    <title>[object Object]</title>
+    <link href="/2021/09/09/%E4%BC%9F%E5%A4%A7%E9%A2%86%E8%A2%96/"/>
+    <url>/2021/09/09/%E4%BC%9F%E5%A4%A7%E9%A2%86%E8%A2%96/</url>
+    
+    <content type="html"><![CDATA[<h1 id="值伟大领袖逝世-45-周年之际，谨以最崇高的敬意怀念毛主席"><a href="#值伟大领袖逝世-45-周年之际，谨以最崇高的敬意怀念毛主席" class="headerlink" title="值伟大领袖逝世 45 周年之际，谨以最崇高的敬意怀念毛主席"></a>值伟大领袖逝世 45 周年之际，谨以最崇高的敬意怀念毛主席</h1>]]></content>
+    
+    
+    <categories>
+      
+      <category>有感</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>伟大领袖</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>[object Object]</title>
+    <link href="/2021/08/30/ArrayList%E5%92%8CLinkedList%E7%9A%84%E5%8C%BA%E5%88%AB/"/>
+    <url>/2021/08/30/ArrayList%E5%92%8CLinkedList%E7%9A%84%E5%8C%BA%E5%88%AB/</url>
+    
+    <content type="html"><![CDATA[<p>一、ArrayList 和 LinkedList 的区别</p><blockquote><p>最本质的区别是数组和链表的区别</p></blockquote><ol><li>数组和链表的区别</li></ol><p><strong>数组</strong>（Array）是有序的元素序列（来自百度百科的定义）。通俗点来说数组是有序存放同类型数据元素的集合。对于数组元素的操作，想要随机访问某一元素可以通过下标直接访问，时间复杂度是 O(1)。但是如果在数组中间增加和删除元素，就需要移动修改位置之后的所有元素。</p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Java容器类详解</title>
     <link href="/2021/08/17/Java%E5%AE%B9%E5%99%A8%E7%B1%BB%E8%AF%A6%E8%A7%A3/"/>
     <url>/2021/08/17/Java%E5%AE%B9%E5%99%A8%E7%B1%BB%E8%AF%A6%E8%A7%A3/</url>
     
-    <content type="html"><![CDATA[<blockquote><p>Java 容器类主要分为以下两类：</p></blockquote><h3 id="一、Collection"><a href="#一、Collection" class="headerlink" title="一、Collection"></a>一、Collection</h3><h4 id="1-List"><a href="#1-List" class="headerlink" title="1.List"></a>1.List</h4><ul><li><p><strong>LinkedList</strong></p></li><li><p><strong>ArrayList</strong></p></li><li><p><strong>Vector</strong></p><ul><li><h4 id="Stack"><a href="#Stack" class="headerlink" title="Stack"></a><strong>Stack</strong></h4></li></ul></li></ul><h4 id="2-Set"><a href="#2-Set" class="headerlink" title="2.Set"></a>2.Set</h4><h4 id="3-Queue"><a href="#3-Queue" class="headerlink" title="3.Queue"></a>3.Queue</h4><h3 id="二、Map"><a href="#二、Map" class="headerlink" title="二、Map"></a>二、Map</h3><ul><li><strong>HashTable</strong></li><li><strong>HashMap</strong></li><li><strong>WeakHashMap</strong></li></ul>]]></content>
+    <content type="html"><![CDATA[<blockquote><p>Java 容器类主要分为以下两类：</p></blockquote><h3 id="一、Collection"><a href="#一、Collection" class="headerlink" title="一、Collection"></a>一、Collection</h3><h4 id="1-List"><a href="#1-List" class="headerlink" title="1.List"></a>1.List</h4><ul><li><p><strong>LinkedList</strong></p></li><li><p><strong>ArrayList</strong></p></li><li><p><strong>Vector</strong></p><ul><li><h4 id="Stack"><a href="#Stack" class="headerlink" title="Stack"></a><strong>Stack</strong></h4></li></ul></li></ul><h4 id="2-Set"><a href="#2-Set" class="headerlink" title="2.Set"></a>2.Set</h4><h4 id="3-Queue"><a href="#3-Queue" class="headerlink" title="3.Queue"></a>3.Queue</h4><h3 id="二、Map"><a href="#二、Map" class="headerlink" title="二、Map"></a>二、Map</h3><ul><li><strong>HashMap</strong></li><li><strong>HashTable</strong></li><li><strong>LinkedHashMap</strong></li><li><strong>TreeMap</strong></li></ul>]]></content>
     
     
     <categories>
