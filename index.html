@@ -209,7 +209,7 @@
     
       <div class="col-12 col-md-4 m-auto index-img">
         <a href="/2021/09/09/%E4%BC%9F%E5%A4%A7%E9%A2%86%E8%A2%96/" target="_self">
-          <img src="/img/background.jpg" srcset="/img/orange.progress-bar-stripe-loader.svg" lazyload alt="[object Object]">
+          <img src="/img/background.jpg" srcset="/img/orange.progress-bar-stripe-loader.svg" lazyload alt="纪念伟大领袖毛主席">
         </a>
       </div>
     
@@ -217,7 +217,7 @@
       <h1 class="index-header">
         
         <a href="/2021/09/09/%E4%BC%9F%E5%A4%A7%E9%A2%86%E8%A2%96/" target="_self">
-          [object Object]
+          纪念伟大领袖毛主席
         </a>
       </h1>
       <p class="index-excerpt">
@@ -233,7 +233,7 @@
         
           <div class="post-meta mr-3">
             <i class="iconfont icon-date"></i>
-            <time datetime="2021-09-09 11:28" pubdate>
+            <time datetime="2021-09-09 00:00" pubdate>
               2021-09-09
             </time>
           </div>
@@ -262,33 +262,34 @@
     
     
       <div class="col-12 col-md-4 m-auto index-img">
-        <a href="/2021/08/30/ArrayList%E5%92%8CLinkedList%E7%9A%84%E5%8C%BA%E5%88%AB/" target="_self">
-          <img src="/img/background.jpg" srcset="/img/orange.progress-bar-stripe-loader.svg" lazyload alt="[object Object]">
+        <a href="/2021/08/30/ArrayList%E3%80%81LinkedList%E5%92%8CVector%E7%9A%84%E5%8C%BA%E5%88%AB/" target="_self">
+          <img src="/img/background.jpg" srcset="/img/orange.progress-bar-stripe-loader.svg" lazyload alt="ArrayList、LinkedList和Vector的区别">
         </a>
       </div>
     
     <article class="col-12 col-md-8 mx-auto index-info">
       <h1 class="index-header">
         
-        <a href="/2021/08/30/ArrayList%E5%92%8CLinkedList%E7%9A%84%E5%8C%BA%E5%88%AB/" target="_self">
-          [object Object]
+        <a href="/2021/08/30/ArrayList%E3%80%81LinkedList%E5%92%8CVector%E7%9A%84%E5%8C%BA%E5%88%AB/" target="_self">
+          ArrayList、LinkedList和Vector的区别
         </a>
       </h1>
       <p class="index-excerpt">
-        <a href="/2021/08/30/ArrayList%E5%92%8CLinkedList%E7%9A%84%E5%8C%BA%E5%88%AB/" target="_self">
+        <a href="/2021/08/30/ArrayList%E3%80%81LinkedList%E5%92%8CVector%E7%9A%84%E5%8C%BA%E5%88%AB/" target="_self">
           
           
             
           
-          一、ArrayList 和 LinkedList 的区别
+          一、ArrayList、LinkedList 和 Vector 的区别
+相同点
 
-最本质的区别是数组和链表的区别
+这三个类都实现了 Collection 接口，存储数据的特点相同：存储有序的、可重复的数据
+
+不同点
 
 
-数组和链表的区别
-
-数组（Array）是有序的元素序列（来自百度百科的定义）。通俗点来说数组是有序存放同类型数据元素的集合。对于数组元素的操作，想要随机访问某一元素可以通过下标直接访问，时间复杂度是 O(1)。但是如果在数组中间增加和删除元素，就需要移动修改位置之后的所有元素。
-
+ArrayList 作为 List 接口的主要实现类，线程不安全，效率高，底层使用 Object[] elementData 存储
+LinkedList 对于频繁的插入、删除操作，使用此类效率比 ArrayLis
         </a>
       </p>
       <div class="index-btm post-metas">
@@ -301,6 +302,24 @@
           </div>
         
         
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/%E9%9D%A2%E8%AF%95%E7%BB%8F%E9%AA%8C/">面试经验</a>
+            
+              <a href="/categories/%E9%9D%A2%E8%AF%95%E7%BB%8F%E9%AA%8C/Java/">Java</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/List/">List</a>
+            
+              <a href="/tags/%E5%AE%B9%E5%99%A8/">容器</a>
+            
+          </div>
         
       </div>
     </article>
@@ -328,27 +347,21 @@
           
             
           
-          
+          集合、数组都是对多个数据进行存储操作的结构，简称Java容器
+
+先寄出这张经典老图
+
+
+
+
 Java 容器类主要分为以下两类：
 
-一、Collection1.List
-LinkedList
-
-ArrayList
-
-Vector
-
-Stack
+一、Collection
+常用方法，注：向Collection接口的实现类的对象中添加数据obj时，一般要求obj所在类要重写equals()
 
 
-
-2.Set3.Queue二、Map
-HashMap
-HashTable
-LinkedHashMap
-TreeMap
-
-
+contains(Object obj)：判断当前集合是否包含obj
+containsAll(Collection lis
         </a>
       </p>
       <div class="index-btm post-metas">
@@ -495,7 +508,9 @@ TreeMap
           <div class="post-meta">
             <i class="iconfont icon-tags"></i>
             
-              <a href="/tags/java%E5%9F%BA%E7%A1%80%EF%BC%8Cfor%E5%BE%AA%E7%8E%AF/">java基础，for循环</a>
+              <a href="/tags/java%E5%9F%BA%E7%A1%80/">java基础</a>
+            
+              <a href="/tags/for%E5%BE%AA%E7%8E%AF/">for循环</a>
             
           </div>
         

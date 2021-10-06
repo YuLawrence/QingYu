@@ -218,7 +218,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      28 字
+      296 字
     </span>
   
 
@@ -228,7 +228,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      1
+      3
        分钟
     </span>
   
@@ -270,18 +270,38 @@
             
               <p class="note note-info">
                 
-                  本文最后更新于：6 天前
+                  本文最后更新于：1 小时前
                 
               </p>
             
             <div class="markdown-body">
-              <blockquote>
+              <p><strong>集合、数组都是对多个数据进行存储操作的结构，简称Java容器</strong></p>
+<blockquote>
+<p>先寄出这张经典老图</p>
+</blockquote>
+<p><img src="https://gitee.com/YuLawrence/picture/raw/master/202110/20211005_215826875_0.png" srcset="/img/orange.progress-bar-stripe-loader.svg" lazyload alt="image-20211005215546519"></p>
+<hr>
+<blockquote>
 <p>Java 容器类主要分为以下两类：</p>
 </blockquote>
-<h3 id="一、Collection"><a href="#一、Collection" class="headerlink" title="一、Collection"></a>一、Collection</h3><h4 id="1-List"><a href="#1-List" class="headerlink" title="1.List"></a>1.List</h4><ul>
-<li><p><strong>LinkedList</strong></p>
-</li>
+<h3 id="一、Collection"><a href="#一、Collection" class="headerlink" title="一、Collection"></a>一、Collection</h3><blockquote>
+<p>常用方法，注：向Collection接口的实现类的对象中添加数据obj时，一般要求obj所在类要重写equals()</p>
+</blockquote>
+<ul>
+<li>contains(Object obj)：判断当前集合是否包含obj</li>
+<li>containsAll(Collection list1)：判断list1中存在的元素是否都存在当前集合中</li>
+<li>remove(Object obj)：从当前集合中移除obj元素</li>
+<li>removeAll(Collection list1)：从当前集合中移除list1中的所有元素</li>
+<li>retainAll(Collection list1)：交集：获取当前集合和list1集合的交集，并返回给当前集合</li>
+<li>equals(Object obj)：判断当前形参和当前集合的元素是否相同，如果实现Collection的是ArrayList类，则顺序也要一致才会返回true；</li>
+<li>hashCode()：返回当前对象的哈希值</li>
+<li>toArray()：将集合转换为数组 ————————&gt; 拓展：将数组转化为集合，调用Array类的静态方法asList()</li>
+<li>iterator()：返回iterator接口的实例，用于遍历集合的元素</li>
+</ul>
+<h4 id="1-List：有序的、可重复的"><a href="#1-List：有序的、可重复的" class="headerlink" title="1.List：有序的、可重复的"></a>1.List：有序的、可重复的</h4><ul>
 <li><p><strong>ArrayList</strong></p>
+</li>
+<li><p><strong>LinkedList</strong></p>
 </li>
 <li><p><strong>Vector</strong></p>
 <ul>
@@ -333,9 +353,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2021/08/30/ArrayList%E5%92%8CLinkedList%E7%9A%84%E5%8C%BA%E5%88%AB/">
+                      <a href="/2021/08/30/ArrayList%E3%80%81LinkedList%E5%92%8CVector%E7%9A%84%E5%8C%BA%E5%88%AB/">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">[object Object]</span>
+                        <span class="hidden-mobile">ArrayList、LinkedList和Vector的区别</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
