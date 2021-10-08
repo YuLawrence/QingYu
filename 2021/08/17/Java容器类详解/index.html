@@ -218,7 +218,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      2.2k 字
+      3.1k 字
     </span>
   
 
@@ -228,7 +228,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      28
+      38
        分钟
     </span>
   
@@ -270,7 +270,7 @@
             
               <p class="note note-info">
                 
-                  本文最后更新于：8 分钟前
+                  本文最后更新于：2 分钟前
                 
               </p>
             
@@ -360,12 +360,25 @@
 <li>自然排序中，比较两个对象是否有相同的标准：compareTo()返回0，不是equals().</li>
 <li>定制排序中，比较两个对象是否相同的标准为：compare()返回0.不再是equals().</li>
 </ol>
-<h4 id="3-Queue"><a href="#3-Queue" class="headerlink" title="3.Queue"></a>3.Queue</h4><h3 id="二、Map"><a href="#二、Map" class="headerlink" title="二、Map"></a>二、Map</h3><ul>
-<li><strong>HashMap</strong></li>
-<li><strong>HashTable</strong></li>
-<li><strong>LinkedHashMap</strong></li>
-<li><strong>TreeMap</strong></li>
+<h4 id="3-Queue"><a href="#3-Queue" class="headerlink" title="3.Queue"></a>3.Queue</h4><h3 id="二、Map：双列数据，存储Key-Value对的数据"><a href="#二、Map：双列数据，存储Key-Value对的数据" class="headerlink" title="二、Map：双列数据，存储Key-Value对的数据"></a>二、Map：双列数据，存储Key-Value对的数据</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-comment">/**</span><br><span class="hljs-comment"> *  Map中的key:无序的、不可重复的，使用Set存储所有的key  ---&gt; 要求key所在的类要重写equals()和hashCode() （以HashMap为例）</span><br><span class="hljs-comment"> *  Map中的value:无序的、可重复的，使用Collection存储所有的value ---&gt;value所在的类要重写equals()</span><br><span class="hljs-comment"> *  一个键值对：key-value构成了一个Entry对象。</span><br><span class="hljs-comment"> *  Map中的entry:无序的、不可重复的，使用Set存储所有的entry</span><br><span class="hljs-comment"> */</span><br></code></pre></td></tr></table></figure>
+
+
+
+<h4 id="1-HashMap：Map的主要实现类：线程不安全的，效率高，可以存储null的key和value"><a href="#1-HashMap：Map的主要实现类：线程不安全的，效率高，可以存储null的key和value" class="headerlink" title="1.HashMap：Map的主要实现类：线程不安全的，效率高，可以存储null的key和value"></a>1.<strong>HashMap</strong>：Map的主要实现类：线程不安全的，效率高，可以存储null的key和value</h4><blockquote>
+<p>HashMap的底层：数组+链表（jdk7及以前），数组+链表+红黑树（jdk8）</p>
+</blockquote>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><code class="hljs java">HashMap的底层实现原理：<br>JDK7：<br>	HashMap hashMap = <span class="hljs-keyword">new</span> HashMap(); <span class="hljs-comment">// 在实例化以后，底层创建了长度是16的一维数组Entry[] table。</span><br>	hashMap.put(<span class="hljs-string">&quot;xxx&quot;</span>,xxx);<br>	...可能已经执行多次put...<br>    hashMap.put(key,value);<br>        首先，调用key所在类的hashCode()计算key1哈希值，此哈希值经过某种算法计算以后，得到在Entry数组中的存放位置。<br>        如果此位置上的数据为空，此时的key-value添加成功。	---情况<span class="hljs-number">1</span><br>        如果此位置上的数据不为空，意味着此位置上有一个或多个数据（以链表形式存在），比较key和已存在的一个或多个数据的哈希值：<br>            如果key的哈希值与已经存在的数据的哈希值都不相同，此时key-value添加成功。	---情况<span class="hljs-number">2</span><br>            如果key的哈希值与已经存在的某个数据(key1,value1)的哈希值相同，继续比较：调用key所在类的equals()方法，比较：<br>            	如果equals()返回<span class="hljs-keyword">false</span>：此时key-value添加成功。	---情况<span class="hljs-number">3</span><br>            	如果equals()返回<span class="hljs-keyword">true</span>：使用value替换value1。<br>            <br>    	注：关于情况<span class="hljs-number">2</span>和清空<span class="hljs-number">3</span>：此时的key-value和原来的数据以链表的方式存储<br>            <br>        在不断的添加过程中，会涉及到扩容问题，当超出临界值(且要存放的位置非空)时，扩容。默认的扩容方式：扩容为原来容量的<span class="hljs-number">2</span>倍，并将原有的数据复制过来。<br><br>JDK8 相较于JDK7在底层的实现方面的不通：<br>	<span class="hljs-number">1.</span><span class="hljs-function">new <span class="hljs-title">HashMap</span><span class="hljs-params">()</span>：底层没有创建一个长度为16的数组。</span><br><span class="hljs-function">	2.JDK8底层的数组是Node[],而非Entry[]</span><br><span class="hljs-function">	3.在首次调用<span class="hljs-title">put</span><span class="hljs-params">()</span>方法时，底层创建长度为16的数组</span><br><span class="hljs-function">	4.JDK7的底层结构只有：数组+链表。JDK8中结构：数组+链表+红黑树。</span><br><span class="hljs-function">        当数组的某一个索引位置上的元素以链表的形式存在的个数 &gt; 8 且当前数组长度 &gt;64,此时此索引位置上的所数据改为使用红黑树存储。</span><br><span class="hljs-function"></span><br><span class="hljs-function">            </span><br></code></pre></td></tr></table></figure>
+
+
+
+<ul>
+<li><strong>LinkedHashMap</strong>：保证在遍历map元素时，可以按照添加的顺序实现遍历。原因：在原有的HashMap底层结构基础上，添加了一对指针，指向前一个和后一个元素。对于频繁的遍历操作，此类执行效率优于HashMap</li>
 </ul>
+<h4 id="2-HashTable：古老的实现类，线程安全，效率低，不能存储null的key和value"><a href="#2-HashTable：古老的实现类，线程安全，效率低，不能存储null的key和value" class="headerlink" title="2.HashTable：古老的实现类，线程安全，效率低，不能存储null的key和value"></a>2.<strong>HashTable</strong>：古老的实现类，线程安全，效率低，不能存储null的key和value</h4><ul>
+<li> <strong>Properties</strong>：常用用来处理配置文件，key和value都是String类型</li>
+</ul>
+<h4 id="3-TreeMap：保证按照添加的key-value对进行排序，实现排序遍历。此时考虑key的自然排序或自定义排序，底层使用红黑树"><a href="#3-TreeMap：保证按照添加的key-value对进行排序，实现排序遍历。此时考虑key的自然排序或自定义排序，底层使用红黑树" class="headerlink" title="3.TreeMap：保证按照添加的key-value对进行排序，实现排序遍历。此时考虑key的自然排序或自定义排序，底层使用红黑树"></a>3.<strong>TreeMap</strong>：保证按照添加的key-value对进行排序，实现排序遍历。此时考虑key的自然排序或自定义排序，底层使用红黑树</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-comment">// 向TreeMap中添加key-value，要求key必须是由同一个类创建的对象，因为要按照key进行排序：自然排序和自定义排序</span><br></code></pre></td></tr></table></figure>
+
 
             </div>
             <hr>
@@ -475,6 +488,34 @@
       <div class="aplayer no-destroy" data-id="5420556716" data-server="netease" data-type="playlist" data-fixed="true" data-mini="true" data-listFolded="false" data-order="random" data-preload="none" data-autoplay="true" muted></div>
     </div>
   </div>
+
+
+<!-- 音乐播放器 -->
+
+<div class="sidebar-inner">
+      <!-- 从下面开始复制，粘贴到这里 -->
+      <!-- require APlayer -->
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css"
+      />
+      <script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
+      <!-- require MetingJS-->
+      <script src="https://cdn.jsdelivr.net/npm/meting@1.2/dist/Meting.min.js"></script>
+      <meting-js
+        server="netease"
+        type="playlist"
+        id="5420556716"
+        fixed="true"
+        autoplay="true"
+        loop="all"
+        order="random"
+        preload="auto"
+        list-folded="ture"
+        list-max-height="500px"
+        lrc-type="1">
+</meting-js>
+</div>
 
 
     
