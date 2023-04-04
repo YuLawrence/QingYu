@@ -7,8 +7,8 @@
 
 <head>
   <meta charset="UTF-8">
-  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
-  <link rel="icon" href="/img/fluid.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.ico">
+  <link rel="icon" href="/img/favicon.ico">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   
@@ -57,11 +57,15 @@
 
 
 
+  
+<link rel="stylesheet" href="/css/.css">
+
+
 
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"yulawrence.github.io","root":"/","version":"1.9.4","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+    var CONFIG = {"hostname":"yulawrence.github.io","root":"/","version":"1.9.4","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":false,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/orange.progress-bar-stripe-loader.svg","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":"yRiQhg7NFe3dIwzrXntg00VS-gzGzoHsz","app_key":"rDTuWe01qMmemCY3BfixOXx4","server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -141,9 +145,9 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/tags/">
-                <i class="iconfont icon-tags-fill"></i>
-                <span>标签</span>
+              <a class="nav-link" href="/docs/">
+                <i class="iconfont icon-books"></i>
+                <span>笔记</span>
               </a>
             </li>
           
@@ -156,6 +160,18 @@
               <a class="nav-link" href="/about/">
                 <i class="iconfont icon-user-fill"></i>
                 <span>关于</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/links/">
+                <i class="iconfont icon-link-fill"></i>
+                <span>友链</span>
               </a>
             </li>
           
@@ -224,7 +240,7 @@
         <div class="card-content">
           
             <div class="link-avatar my-auto">
-              <img src="/img/favicon.png" srcset="/img/loading.gif" lazyload alt="Fluid Blog"
+              <img src="/img/favicon.png" srcset="/img/orange.progress-bar-stripe-loader.svg" lazyload alt="Fluid Blog"
                    onerror="this.onerror=null; this.src=this.srcset='/img/avatar.png'"/>
             </div>
           
@@ -242,7 +258,7 @@
         <div class="card-content">
           
             <div class="link-avatar my-auto">
-              <img src="/img/favicon.png" srcset="/img/loading.gif" lazyload alt="Fluid Docs"
+              <img src="/img/favicon.png" srcset="/img/orange.progress-bar-stripe-loader.svg" lazyload alt="Fluid Docs"
                    onerror="this.onerror=null; this.src=this.srcset='/img/avatar.png'"/>
             </div>
           
@@ -260,7 +276,7 @@
         <div class="card-content">
           
             <div class="link-avatar my-auto">
-              <img src="/img/favicon.png" srcset="/img/loading.gif" lazyload alt="Fluid Repo"
+              <img src="/img/favicon.png" srcset="/img/orange.progress-bar-stripe-loader.svg" lazyload alt="Fluid Repo"
                    onerror="this.onerror=null; this.src=this.srcset='/img/avatar.png'"/>
             </div>
           
@@ -272,9 +288,76 @@
       </a>
     </div>
   
+    
+    <div class="card col-lg-4 col-md-6 col-sm-12">
+      <a href="http://lzqlearn.com/" class="card-body hover-with-bg" target="_blank" rel="noopener">
+        <div class="card-content">
+          
+            <div class="link-avatar my-auto">
+              <img src="https://typora-gilgamesh.oss-cn-shanghai.aliyuncs.com/img1/2022:04:03-02:37:32-mark.png" srcset="/img/orange.progress-bar-stripe-loader.svg" lazyload alt="Gilgamesh"
+                   onerror="this.onerror=null; this.src=this.srcset='/img/avatar.png'"/>
+            </div>
+          
+          <div class="link-text">
+            <div class="link-title">Gilgamesh</div>
+            <div class="link-intro">（未经作者同意，先留个脚印，待学习一波。）</div>
+          </div>
+        </div>
+      </a>
+    </div>
+  
+    
+    <div class="card col-lg-4 col-md-6 col-sm-12">
+      <a href="https://juemuren4449.com/" class="card-body hover-with-bg" target="_blank" rel="noopener">
+        <div class="card-content">
+          
+            <div class="link-avatar my-auto">
+              <img src="https://img.juemuren4449.com/8800ae52455866ef8f0ada30b72113fe.png" srcset="/img/orange.progress-bar-stripe-loader.svg" lazyload alt="掘墓人的小铲子"
+                   onerror="this.onerror=null; this.src=this.srcset='/img/avatar.png'"/>
+            </div>
+          
+          <div class="link-text">
+            <div class="link-title">掘墓人的小铲子</div>
+            <div class="link-intro">（未经作者同意，先留个脚印，待学习一波。）+1</div>
+          </div>
+        </div>
+      </a>
+    </div>
+  
 </div>
 
 
+
+
+  
+  
+    <article id="comments" lazyload>
+      
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.loadComments('#valine', function() {
+      Fluid.utils.createScript('https://lib.baomitu.com/valine/1.5.1/Valine.min.js', function() {
+        var options = Object.assign(
+          {"appId":"yRiQhg7NFe3dIwzrXntg00VS-gzGzoHsz","appKey":"rDTuWe01qMmemCY3BfixOXx4","placeholder":"你要写点什么吗...","path":"window.location.pathname","avatar":"mp","meta":["nick","mail","link"],"requiredFields":[],"pageSize":10,"lang":"zh-CN","highlight":false,"recordIP":false,"serverURLs":"","emojiCDN":null,"emojiMaps":null,"enableQQ":false},
+          {
+            el: "#valine",
+            path: window.location.pathname
+          }
+        )
+        new Valine(options);
+        Fluid.utils.waitElementVisible('#valine .vcontent', () => {
+          var imgSelector = '#valine .vcontent img:not(.vemoji)';
+          Fluid.plugins.imageCaption(imgSelector);
+          Fluid.plugins.fancyBox(imgSelector);
+        })
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the comments</noscript>
+
+
+    </article>
+  
 
 
 
@@ -316,15 +399,46 @@
     
 
     
+      <div class="col-lg-7 mx-auto nopadding-x-md">
+        <div class="container custom mx-auto">
+              <!-- require APlayer --> <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css" /> <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script> <!-- require MetingJS --> <script src="https://cdn.jsdelivr.net/npm/meting@2.0.1/dist/Meting.min.js"></script> <div class="aplayer no-destroy" data-id="100524452" data-server="netease" data-type="playlist" data-fixed="true" data-mini="true" data-listFolded="false" data-order="random" data-preload="none" data-autoplay="false" muted></div>
+        </div>
+      </div>
+    
   </main>
 
   <footer>
     <div class="footer-inner">
   
     <div class="footer-content">
-       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> <div class="aplayer no-destroy" data-id="100524452" data-server="netease" data-type="playlist" data-fixed="true" data-mini="true" data-listFolded="false" data-order="random" data-preload="none" data-autoplay="false" muted></div> 
     </div>
   
+  
+    <div class="statistics">
+  
+  
+
+  
+    
+      <span id="leancloud-site-pv-container" style="display: none">
+        总访问量 
+        <span id="leancloud-site-pv"></span>
+         次
+      </span>
+    
+    
+      <span id="leancloud-site-uv-container" style="display: none">
+        总访客数 
+        <span id="leancloud-site-uv"></span>
+         人
+      </span>
+    
+    
+
+  
+</div>
+
   
   
   
@@ -334,17 +448,6 @@
 
   <!-- Scripts -->
   
-  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
-  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
-
-  <script>
-    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
-    NProgress.start()
-    window.addEventListener('load', function() {
-      NProgress.done();
-    })
-  </script>
-
 
 <script  src="https://lib.baomitu.com/jquery/3.6.0/jquery.min.js" ></script>
 <script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
@@ -379,7 +482,13 @@
 
   <script  src="/js/local-search.js" ></script>
 
+  <script defer src="/js/leancloud.js" ></script>
 
+
+
+
+  
+<script src="/js/custom.js"></script>
 
 
 

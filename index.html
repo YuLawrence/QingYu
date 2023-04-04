@@ -7,8 +7,8 @@
 
 <head>
   <meta charset="UTF-8">
-  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
-  <link rel="icon" href="/img/fluid.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.ico">
+  <link rel="icon" href="/img/favicon.ico">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   
@@ -57,11 +57,15 @@
 
 
 
+  
+<link rel="stylesheet" href="/css/.css">
+
+
 
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"yulawrence.github.io","root":"/","version":"1.9.4","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+    var CONFIG = {"hostname":"yulawrence.github.io","root":"/","version":"1.9.4","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":false,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/orange.progress-bar-stripe-loader.svg","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":"yRiQhg7NFe3dIwzrXntg00VS-gzGzoHsz","app_key":"rDTuWe01qMmemCY3BfixOXx4","server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -141,9 +145,9 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/tags/">
-                <i class="iconfont icon-tags-fill"></i>
-                <span>标签</span>
+              <a class="nav-link" href="/docs/">
+                <i class="iconfont icon-books"></i>
+                <span>笔记</span>
               </a>
             </li>
           
@@ -156,6 +160,18 @@
               <a class="nav-link" href="/about/">
                 <i class="iconfont icon-user-fill"></i>
                 <span>关于</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/links/">
+                <i class="iconfont icon-link-fill"></i>
+                <span>友链</span>
               </a>
             </li>
           
@@ -189,7 +205,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="An elegant Material-Design theme for Hexo"></span>
+            <span id="subtitle" data-typed-text="世界是你们的，也是我们的，但是归根结底是你们的"></span>
           
         </div>
 
@@ -224,18 +240,24 @@
   <div class="row mx-auto index-card">
     
     
-    <article class="col-12 col-md-12 mx-auto index-info">
+      <div class="col-12 col-md-4 m-auto index-img">
+        <a href="/2023/04/04/Java%E5%AE%B9%E5%99%A8%E7%B1%BB%E8%AF%A6%E8%A7%A3/" target="_self">
+          <img src="/img/background.jpg" srcset="/img/orange.progress-bar-stripe-loader.svg" lazyload alt="Java容器类详解">
+        </a>
+      </div>
+    
+    <article class="col-12 col-md-8 mx-auto index-info">
       <h1 class="index-header">
         
-        <a href="/2023/04/02/hello-world/" target="_self">
-          Hello World
+        <a href="/2023/04/04/Java%E5%AE%B9%E5%99%A8%E7%B1%BB%E8%AF%A6%E8%A7%A3/" target="_self">
+          Java容器类详解
         </a>
       </h1>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/2023/04/02/hello-world/" target="_self">
+      <a class="index-excerpt " href="/2023/04/04/Java%E5%AE%B9%E5%99%A8%E7%B1%BB%E8%AF%A6%E8%A7%A3/" target="_self">
         <div>
-          Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick
+          源于尚硅谷视频教程总结的笔记 推荐去看视频教程：https://www.bilibili.com/video/BV1Kb411W75N    集合、数组都是对多个数据进行存储操作的结构，简称Java容器  先寄出这张经典老图     Java 容器类主要分为以下两类：  一、Collection 常用方法，注：向Collection接口的实现类的对象中添加数据obj时，一般要求obj所在类要重
         </div>
       </a>
 
@@ -243,12 +265,642 @@
         
           <div class="post-meta mr-3">
             <i class="iconfont icon-date"></i>
-            <time datetime="2023-04-02 21:44" pubdate>
-              2023-04-02
+            <time datetime="2023-04-04 16:54" pubdate>
+              2023-04-04
             </time>
           </div>
         
         
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E9%9D%A2%E8%AF%95%E7%BB%8F%E9%AA%8C/" class="category-chain-item">面试经验</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/%E9%9D%A2%E8%AF%95%E7%BB%8F%E9%AA%8C/Java/" class="category-chain-item">Java</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/Java%E5%AE%B9%E5%99%A8%E7%B1%BB/">#Java容器类</a>
+            
+              <a href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">#数据结构</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+      <div class="col-12 col-md-4 m-auto index-img">
+        <a href="/2023/04/04/ArrayList%E3%80%81LinkedList%E5%92%8CVector%E7%9A%84%E5%8C%BA%E5%88%AB/" target="_self">
+          <img src="/img/background.jpg" srcset="/img/orange.progress-bar-stripe-loader.svg" lazyload alt="ArrayList、LinkedList和Vector的区别">
+        </a>
+      </div>
+    
+    <article class="col-12 col-md-8 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2023/04/04/ArrayList%E3%80%81LinkedList%E5%92%8CVector%E7%9A%84%E5%8C%BA%E5%88%AB/" target="_self">
+          ArrayList、LinkedList和Vector的区别
+        </a>
+      </h1>
+
+      
+      <a class="index-excerpt " href="/2023/04/04/ArrayList%E3%80%81LinkedList%E5%92%8CVector%E7%9A%84%E5%8C%BA%E5%88%AB/" target="_self">
+        <div>
+          ArrayList、LinkedList 和 Vector 的区别 一、区别 相同点  这三个类都实现了 Collection 接口，存储数据的特点相同：存储有序的、可重复的数据  不同点   ArrayList 作为 List 接口的主要实现类，线程不安全，效率高，底层使用 Object[] elementData 存储 LinkedList 对于频繁的插入、删除操作，使用此类效率比 Array
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-04-04 16:54" pubdate>
+              2023-04-04
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E9%9D%A2%E8%AF%95%E7%BB%8F%E9%AA%8C/" class="category-chain-item">面试经验</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/%E9%9D%A2%E8%AF%95%E7%BB%8F%E9%AA%8C/Java/" class="category-chain-item">Java</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/List/">#List</a>
+            
+              <a href="/tags/%E5%AE%B9%E5%99%A8/">#容器</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+      <div class="col-12 col-md-4 m-auto index-img">
+        <a href="/2022/12/25/Java%E7%9A%8423%E7%A7%8D%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" target="_self">
+          <img src="/img/background.jpg" srcset="/img/orange.progress-bar-stripe-loader.svg" lazyload alt="Java的23种设计模式">
+        </a>
+      </div>
+    
+    <article class="col-12 col-md-8 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2022/12/25/Java%E7%9A%8423%E7%A7%8D%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" target="_self">
+          Java的23种设计模式
+        </a>
+      </h1>
+
+      
+      <a class="index-excerpt " href="/2022/12/25/Java%E7%9A%8423%E7%A7%8D%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" target="_self">
+        <div>
+          原文链接：IRIS与Caché的23种设计模式 | InterSystems Developer Community | Caché|InterSystems 原文是COS版的设计模式，这里纯属学习设计模式思想。  第一章 Java设计模式 简单工程模式定义 简单工厂模式属于创建型模式，又可称为静态工厂模式，这是由一个工厂对象决定创建出哪一种产品类的实例   比如：衣服工程只生产衣服，食物工厂只
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2022-12-25 22:16" pubdate>
+              2022-12-25
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E6%8A%80%E6%9C%AF/" class="category-chain-item">技术</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/%E6%8A%80%E6%9C%AF/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" class="category-chain-item">设计模式</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/">#设计模式</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+      <div class="col-12 col-md-4 m-auto index-img">
+        <a href="/2022/09/28/%E4%BB%8E0%E6%90%AD%E5%BB%BASpringBoot%E9%A1%B9%E7%9B%AE/" target="_self">
+          <img src="/img/background.jpg" srcset="/img/orange.progress-bar-stripe-loader.svg" lazyload alt="从0搭建SpringBoot项目">
+        </a>
+      </div>
+    
+    <article class="col-12 col-md-8 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2022/09/28/%E4%BB%8E0%E6%90%AD%E5%BB%BASpringBoot%E9%A1%B9%E7%9B%AE/" target="_self">
+          从0搭建SpringBoot项目
+        </a>
+      </h1>
+
+      
+      <a class="index-excerpt " href="/2022/09/28/%E4%BB%8E0%E6%90%AD%E5%BB%BASpringBoot%E9%A1%B9%E7%9B%AE/" target="_self">
+        <div>
+          由于自己新做了个项目练手，先设计完了门户网站首页，需要设计相应后端服务，不过之前搭建的忘了存模板，这次重新搭建一次顺便记录一下。搭建的SpringBoot项目时基于若依前后端分离框架实现的，在原有基础上选择性修改。  开发工具：IntelliJ IDEA 2021.3.3 (Ultimate Edition) 若依框架分离版：RuoYi-Vue: 🎉 基于SpringBoot，Spring Se
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2022-09-28 15:17" pubdate>
+              2022-09-28
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E6%8A%80%E6%9C%AF/" class="category-chain-item">技术</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/%E6%8A%80%E6%9C%AF/Spring/" class="category-chain-item">Spring</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/SpringBoot/">#SpringBoot</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+      <div class="col-12 col-md-4 m-auto index-img">
+        <a href="/2022/08/26/Java%E5%BC%80%E5%8F%91%E6%8A%A5%E9%94%99%E6%B1%87%E6%80%BB/" target="_self">
+          <img src="/img/background.jpg" srcset="/img/orange.progress-bar-stripe-loader.svg" lazyload alt="找不到或无法加载主类">
+        </a>
+      </div>
+    
+    <article class="col-12 col-md-8 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2022/08/26/Java%E5%BC%80%E5%8F%91%E6%8A%A5%E9%94%99%E6%B1%87%E6%80%BB/" target="_self">
+          找不到或无法加载主类
+        </a>
+      </h1>
+
+      
+      <a class="index-excerpt " href="/2022/08/26/Java%E5%BC%80%E5%8F%91%E6%8A%A5%E9%94%99%E6%B1%87%E6%80%BB/" target="_self">
+        <div>
+          第一种情况问题描述：控制台报错：找不到或无法加载主类。原因可能是因为我更改过模块名和包名，后来和正常的应用对比，发现启动类的路径有问题，调换位置后可以正常启动了，浅记一下。  解决方法：先重启了一遍IDEA（这步不知道有没有影响）， 然后将启动类放到正确路径下，然后就可以正确运行了。
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2022-08-26 19:10" pubdate>
+              2022-08-26
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E6%8A%A5%E9%94%99/" class="category-chain-item">报错</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/%E6%8A%A5%E9%94%99/Java/" class="category-chain-item">Java</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E6%8A%A5%E9%94%99/">#报错</a>
+            
+              <a href="/tags/%E6%89%BE%E4%B8%8D%E5%88%B0%E6%88%96%E6%97%A0%E6%B3%95%E5%8A%A0%E8%BD%BD%E4%B8%BB%E7%B1%BB/">#找不到或无法加载主类</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+      <div class="col-12 col-md-4 m-auto index-img">
+        <a href="/2022/07/19/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" target="_self">
+          <img src="/img/background.jpg" srcset="/img/orange.progress-bar-stripe-loader.svg" lazyload alt="操作系统">
+        </a>
+      </div>
+    
+    <article class="col-12 col-md-8 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2022/07/19/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" target="_self">
+          操作系统
+        </a>
+      </h1>
+
+      
+      <a class="index-excerpt " href="/2022/07/19/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" target="_self">
+        <div>
+          
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2022-07-19 10:40" pubdate>
+              2022-07-19
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/408/" class="category-chain-item">408</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/408/">#408</a>
+            
+              <a href="/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/">#操作系统</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+      <div class="col-12 col-md-4 m-auto index-img">
+        <a href="/2021/08/17/%E5%85%B3%E4%BA%8EOracle%E6%8F%92%E5%85%A5%E7%BA%AA%E5%BD%95%E5%A6%82%E4%BD%95%E5%90%8C%E6%97%B6%E8%BF%94%E5%9B%9E%E4%B8%BB%E9%94%AE/" target="_self">
+          <img src="/img/background.jpg" srcset="/img/orange.progress-bar-stripe-loader.svg" lazyload alt="关于Oracle插入纪录如何同时返回主键">
+        </a>
+      </div>
+    
+    <article class="col-12 col-md-8 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2021/08/17/%E5%85%B3%E4%BA%8EOracle%E6%8F%92%E5%85%A5%E7%BA%AA%E5%BD%95%E5%A6%82%E4%BD%95%E5%90%8C%E6%97%B6%E8%BF%94%E5%9B%9E%E4%B8%BB%E9%94%AE/" target="_self">
+          关于Oracle插入纪录如何同时返回主键
+        </a>
+      </h1>
+
+      
+      <a class="index-excerpt " href="/2021/08/17/%E5%85%B3%E4%BA%8EOracle%E6%8F%92%E5%85%A5%E7%BA%AA%E5%BD%95%E5%A6%82%E4%BD%95%E5%90%8C%E6%97%B6%E8%BF%94%E5%9B%9E%E4%B8%BB%E9%94%AE/" target="_self">
+        <div>
+          今天上午开发中遇到的一个问题，之前也确实没有使用，写了好久才解决。  1.问题由来前端需要在调用插入方法后获取相应的 id 主键。使用的是 Oracle 的数据库，Oracle 的主键是采用序列自增的。 2.实现思路1234567&lt;insert id=&quot;id&quot; parameterType=&quot;com.lawrence.entity.User&quot; useG
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2021-08-17 11:29" pubdate>
+              2021-08-17
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E6%8A%80%E6%9C%AF/" class="category-chain-item">技术</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/%E6%8A%80%E6%9C%AF/Oracle/" class="category-chain-item">Oracle</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/Oracle/">#Oracle</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+      <div class="col-12 col-md-4 m-auto index-img">
+        <a href="/2021/08/16/%E9%81%8D%E5%8E%86%E5%BE%AA%E7%8E%AF%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/" target="_self">
+          <img src="/img/background.jpg" srcset="/img/orange.progress-bar-stripe-loader.svg" lazyload alt="遍历循环遇到的问题">
+        </a>
+      </div>
+    
+    <article class="col-12 col-md-8 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2021/08/16/%E9%81%8D%E5%8E%86%E5%BE%AA%E7%8E%AF%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/" target="_self">
+          遍历循环遇到的问题
+        </a>
+      </h1>
+
+      
+      <a class="index-excerpt " href="/2021/08/16/%E9%81%8D%E5%8E%86%E5%BE%AA%E7%8E%AF%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/" target="_self">
+        <div>
+          今天又是蠢蠢的一天，再再再再一次因为写错导致排查半天的错误  1.话不多说，直接复现了一下问题12345678910111213141516171819202122232425262728293031323334353637383940414243import java.util.ArrayList;import java.util.List;public class questionnair
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2021-08-16 17:15" pubdate>
+              2021-08-16
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E6%8A%80%E6%9C%AF/" class="category-chain-item">技术</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/%E6%8A%80%E6%9C%AF/Java/" class="category-chain-item">Java</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/java%E5%9F%BA%E7%A1%80/">#java基础</a>
+            
+              <a href="/tags/for%E5%BE%AA%E7%8E%AF/">#for循环</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+      <div class="col-12 col-md-4 m-auto index-img">
+        <a href="/2021/08/10/Oracle%E4%B8%ADnvl%E7%9A%84%E7%94%A8%E6%B3%95/" target="_self">
+          <img src="/img/background.jpg" srcset="/img/orange.progress-bar-stripe-loader.svg" lazyload alt="Oracle 中 nvl 的用法">
+        </a>
+      </div>
+    
+    <article class="col-12 col-md-8 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2021/08/10/Oracle%E4%B8%ADnvl%E7%9A%84%E7%94%A8%E6%B3%95/" target="_self">
+          Oracle 中 nvl 的用法
+        </a>
+      </h1>
+
+      
+      <a class="index-excerpt " href="/2021/08/10/Oracle%E4%B8%ADnvl%E7%9A%84%E7%94%A8%E6%B3%95/" target="_self">
+        <div>
+          记录一下平时简单开发中用到的 nvl 函数，加深对 Oracle 常用函数的理解。  1.nvl()的定义（来源于百科）NVL(E1, E2)的功能为：如果 E1 为 NULL，则函数返回 E2，否则返回 E1 本身。但此函数有一定局限，所以就有了 NVL2 函数。 拓展：NVL2 函数:Oracle&#x2F;PLSQL 中的一个函数,Oracle 在 NVL 函数的功能上扩展，提供了 NVL
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2021-08-10 08:30" pubdate>
+              2021-08-10
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E6%8A%80%E6%9C%AF/" class="category-chain-item">技术</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/%E6%8A%80%E6%9C%AF/Oracle/" class="category-chain-item">Oracle</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/Oracle/">#Oracle</a>
+            
+          </div>
         
       </div>
     </article>
@@ -296,15 +948,46 @@
     
 
     
+      <div class="col-lg-7 mx-auto nopadding-x-md">
+        <div class="container custom mx-auto">
+              <!-- require APlayer --> <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css" /> <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script> <!-- require MetingJS --> <script src="https://cdn.jsdelivr.net/npm/meting@2.0.1/dist/Meting.min.js"></script> <div class="aplayer no-destroy" data-id="100524452" data-server="netease" data-type="playlist" data-fixed="true" data-mini="true" data-listFolded="false" data-order="random" data-preload="none" data-autoplay="false" muted></div>
+        </div>
+      </div>
+    
   </main>
 
   <footer>
     <div class="footer-inner">
   
     <div class="footer-content">
-       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> <div class="aplayer no-destroy" data-id="100524452" data-server="netease" data-type="playlist" data-fixed="true" data-mini="true" data-listFolded="false" data-order="random" data-preload="none" data-autoplay="false" muted></div> 
     </div>
   
+  
+    <div class="statistics">
+  
+  
+
+  
+    
+      <span id="leancloud-site-pv-container" style="display: none">
+        总访问量 
+        <span id="leancloud-site-pv"></span>
+         次
+      </span>
+    
+    
+      <span id="leancloud-site-uv-container" style="display: none">
+        总访客数 
+        <span id="leancloud-site-uv"></span>
+         人
+      </span>
+    
+    
+
+  
+</div>
+
   
   
   
@@ -314,17 +997,6 @@
 
   <!-- Scripts -->
   
-  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
-  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
-
-  <script>
-    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
-    NProgress.start()
-    window.addEventListener('load', function() {
-      NProgress.done();
-    })
-  </script>
-
 
 <script  src="https://lib.baomitu.com/jquery/3.6.0/jquery.min.js" ></script>
 <script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
@@ -359,7 +1031,13 @@
 
   <script  src="/js/local-search.js" ></script>
 
+  <script defer src="/js/leancloud.js" ></script>
 
+
+
+
+  
+<script src="/js/custom.js"></script>
 
 
 
