@@ -13,20 +13,20 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   
   <meta name="theme-color" content="#2f4154">
-  <meta name="author" content="禹迹">
+  <meta name="author" content="柠檬薄荷">
   <meta name="keywords" content="清新">
   
     <meta name="description" content="源于尚硅谷视频教程总结的笔记 推荐去看视频教程：https:&#x2F;&#x2F;www.bilibili.com&#x2F;video&#x2F;BV1Kb411W75N    集合、数组都是对多个数据进行存储操作的结构，简称Java容器  先寄出这张经典老图     Java 容器类主要分为以下两类：  一、Collection 常用方法，注：向Collection接口的实现类的对象中添加数据obj时，一般要求obj所在类要重">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Java容器类详解">
-<meta property="og:url" content="http://yulawrence.github.io/2023/04/04/Java%E5%AE%B9%E5%99%A8%E7%B1%BB%E8%AF%A6%E8%A7%A3/index.html">
-<meta property="og:site_name" content="柠檬薄荷">
+<meta property="og:url" content="http://qingyux.cn/2023/04/04/Java%E5%AE%B9%E5%99%A8%E7%B1%BB%E8%AF%A6%E8%A7%A3/index.html">
+<meta property="og:site_name" content="稷下学宫">
 <meta property="og:description" content="源于尚硅谷视频教程总结的笔记 推荐去看视频教程：https:&#x2F;&#x2F;www.bilibili.com&#x2F;video&#x2F;BV1Kb411W75N    集合、数组都是对多个数据进行存储操作的结构，简称Java容器  先寄出这张经典老图     Java 容器类主要分为以下两类：  一、Collection 常用方法，注：向Collection接口的实现类的对象中添加数据obj时，一般要求obj所在类要重">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://gitee.com/YuLawrence/picture/raw/master/202110/20211005_215826875_0.png">
 <meta property="article:published_time" content="2023-04-04T08:54:39.139Z">
 <meta property="article:modified_time" content="2021-10-08T12:58:57.630Z">
-<meta property="article:author" content="禹迹">
+<meta property="article:author" content="柠檬薄荷">
 <meta property="article:tag" content="Java容器类">
 <meta property="article:tag" content="数据结构">
 <meta name="twitter:card" content="summary_large_image">
@@ -34,7 +34,7 @@
   
   
   
-  <title>Java容器类详解 - 柠檬薄荷</title>
+  <title>Java容器类详解 - 稷下学宫</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -76,7 +76,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"yulawrence.github.io","root":"/","version":"1.9.4","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":false,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/orange.progress-bar-stripe-loader.svg","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":"yRiQhg7NFe3dIwzrXntg00VS-gzGzoHsz","app_key":"rDTuWe01qMmemCY3BfixOXx4","server_url":"https://yriqhg7n.lc-cn-n1-shared.com","path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+    var CONFIG = {"hostname":"qingyux.cn","root":"/","version":"1.9.4","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":false,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/orange.progress-bar-stripe-loader.svg","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":"yRiQhg7NFe3dIwzrXntg00VS-gzGzoHsz","app_key":"rDTuWe01qMmemCY3BfixOXx4","server_url":"https://yriqhg7n.lc-cn-n1-shared.com","path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -485,13 +485,13 @@
   <div class="license-box my-3">
     <div class="license-title">
       <div>Java容器类详解</div>
-      <div>http://yulawrence.github.io/2023/04/04/Java容器类详解/</div>
+      <div>http://qingyux.cn/2023/04/04/Java容器类详解/</div>
     </div>
     <div class="license-meta">
       
         <div class="license-meta-item">
           <div>作者</div>
-          <div>禹迹</div>
+          <div>柠檬薄荷</div>
         </div>
       
       

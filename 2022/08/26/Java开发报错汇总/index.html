@@ -19,24 +19,24 @@
     <meta name="description" content="第一种情况问题描述：控制台报错：找不到或无法加载主类。原因可能是因为我更改过模块名和包名，后来和正常的应用对比，发现启动类的路径有问题，调换位置后可以正常启动了，浅记一下。  解决方法：先重启了一遍IDEA（这步不知道有没有影响）， 然后将启动类放到正确路径下，然后就可以正确运行了。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="找不到或无法加载主类">
-<meta property="og:url" content="http://yulawrence.github.io/2022/08/26/Java%E5%BC%80%E5%8F%91%E6%8A%A5%E9%94%99%E6%B1%87%E6%80%BB/index.html">
-<meta property="og:site_name" content="柠檬薄荷">
+<meta property="og:url" content="http://qingyux.cn/2022/08/26/Java%E5%BC%80%E5%8F%91%E6%8A%A5%E9%94%99%E6%B1%87%E6%80%BB/index.html">
+<meta property="og:site_name" content="稷下学宫">
 <meta property="og:description" content="第一种情况问题描述：控制台报错：找不到或无法加载主类。原因可能是因为我更改过模块名和包名，后来和正常的应用对比，发现启动类的路径有问题，调换位置后可以正常启动了，浅记一下。  解决方法：先重启了一遍IDEA（这步不知道有没有影响）， 然后将启动类放到正确路径下，然后就可以正确运行了。">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://yulawrence.github.io/img/image-20220826193310641.png">
-<meta property="og:image" content="http://yulawrence.github.io/img/image-20220826193942121.png">
-<meta property="og:image" content="http://yulawrence.github.io/img/image-20220826194315540.png">
+<meta property="og:image" content="http://qingyux.cn/img/image-20220826193310641.png">
+<meta property="og:image" content="http://qingyux.cn/img/image-20220826193942121.png">
+<meta property="og:image" content="http://qingyux.cn/img/image-20220826194315540.png">
 <meta property="article:published_time" content="2022-08-26T11:10:23.000Z">
 <meta property="article:modified_time" content="2023-04-02T14:47:02.850Z">
-<meta property="article:author" content="禹迹">
+<meta property="article:author" content="柠檬薄荷">
 <meta property="article:tag" content="报错">
 <meta property="article:tag" content="找不到或无法加载主类">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://yulawrence.github.io/img/image-20220826193310641.png">
+<meta name="twitter:image" content="http://qingyux.cn/img/image-20220826193310641.png">
   
   
   
-  <title>找不到或无法加载主类 - 柠檬薄荷</title>
+  <title>找不到或无法加载主类 - 稷下学宫</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -78,7 +78,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"yulawrence.github.io","root":"/","version":"1.9.4","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":false,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/orange.progress-bar-stripe-loader.svg","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":"yRiQhg7NFe3dIwzrXntg00VS-gzGzoHsz","app_key":"rDTuWe01qMmemCY3BfixOXx4","server_url":"https://yriqhg7n.lc-cn-n1-shared.com","path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+    var CONFIG = {"hostname":"qingyux.cn","root":"/","version":"1.9.4","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":false,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/orange.progress-bar-stripe-loader.svg","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":"yRiQhg7NFe3dIwzrXntg00VS-gzGzoHsz","app_key":"rDTuWe01qMmemCY3BfixOXx4","server_url":"https://yriqhg7n.lc-cn-n1-shared.com","path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -387,7 +387,7 @@
   <div class="license-box my-3">
     <div class="license-title">
       <div>找不到或无法加载主类</div>
-      <div>http://yulawrence.github.io/2022/08/26/Java开发报错汇总/</div>
+      <div>http://qingyux.cn/2022/08/26/Java开发报错汇总/</div>
     </div>
     <div class="license-meta">
       
